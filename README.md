@@ -1,2 +1,6 @@
 # GifTastic
-Homework5
+Homework6
+
+Author:
+Sharareh ShafieiKermani
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GifTastic</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+	<div class=container>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="page-header text-center"><h1>GifTastic</h1></div>
+			</div>
+		</div>
+		<div class="row">
+	    	<div class="col-md-12" id="buttons-view">
+	    		<button class="btn btn-default animal" data-animal="Cat">Cat</button>
+	    		<button class="btn btn-default animal" data-animal="Dog">Dog</button>
+				<button class="btn btn-default animal" data-animal="Bird">Bird</button>
+				<button class="btn btn-default animal" data-animal="Rabbit">Rabbit</button>
+				<button class="btn btn-default animal" data-animal="Monkey">Monkey</button>
+				<button class="btn btn-default animal" data-animal="Lion">Lion</button>
+				<button class="btn btn-default animal" data-animal="Tiger">Tiger</button>
+				<button class="btn btn-default animal" data-animal="Fish">Fish</button>
+	    	</div>
+	    </div>
+	    <div class="row">
+	    		<div class="col-md-10" id="gifs-appear-here"></div>
+		    	<div class="col-md-2" id="animal-form">
+			    	<form>
+			        	<label for="animal-input">Add an animal:</label>
+			        	<input type="text" value="" id="animal-input"><br><br>
+			        	<input type="submit" name="button" class="btn btn-default" id="newButton">
+		    		</form>
+	    		</div>
+	  	</div>
+	</div>
+	<div class="navbar-fixed-bottom">
+	    <p class="text-center">&copy;Copyright 2017 Sharareh ShafieiKermani</p>
+	</div>
+   	<script src="assets/javascript/app.js"></script>
+</body>
+</html>
