@@ -1,3 +1,7 @@
+var animals = [];
+
+function displayGif(){
+
 $("button").on("click", function() {
 
         var animal = $(this).attr("data-animal");
@@ -18,7 +22,7 @@ $("button").on("click", function() {
 
                 for (var i = 0; i < results.length; i++) {
 
-                    var animalDiv = $("<div>");
+                    var animalDiv = $("<div class='animal'>");
                     var p = $("<p>").text("Rating: " + results[i].rating);
                     var animalImage = $("<img>");
 
@@ -50,8 +54,34 @@ $("button").on("click", function() {
                     }
                 });
             });        
-    });
+  });
+}
+    function renderButtons() {
 
+        $("#new-buttons-view").empty();
+
+        for (var i = 0; i < animals.length; i++) {
+
+          var a = $("<button>");
+          a.addClass("btn btn-default animal");
+          a.attr("data-animal", animals[i]);
+          a.text(animals[i]);
+          $("#new-buttons-view").append(a);
+        }
+      }
+
+      $("#newButton").on("click", function(event) {
+        event.preventDefault();
+        var animal = $("#animal-input").val().trim();
+        animals.push(animal);
+        renderButtons();
+        
+      });
+
+
+      $(document).on("click", ".animal", displayGif);
+
+      renderButtons();
 
 
 
